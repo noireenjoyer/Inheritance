@@ -24,12 +24,12 @@ class Calculator {
     public int rollDice() {
 
         Random random = new Random();
-        return random.nextInt(10) + 1; // Генеруємо число від 1 до 10
+        return random.nextInt(10) + 1; // Генерируем число от 1 до 10
 
     }
 }
 
-// Клас, який успадковує логіку розрахунку виграшу
+// Класс наследования
     class Game extends Calculator {
 
     }
@@ -46,7 +46,7 @@ public class Main {
         double betAmount ; // Ставка
         int rolledNumber = game.rollDice() ; // Число, которое выпало
 
-        System.out.println("Input product price: "); //Ввод значения;
+        System.out.println("Input your bet: "); //Ввод значения;
 
         try {  //Использование исключения при вводе не числа;
             betAmount = scanner.nextDouble();
