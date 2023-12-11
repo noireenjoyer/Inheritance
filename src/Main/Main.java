@@ -31,7 +31,7 @@ class Calculator {
 
 // Класс наследования
     class Game extends Calculator {
-
+        
     }
 
 public class Main {
@@ -55,8 +55,11 @@ public class Main {
             return;
         }
 
+        System.out.println("Your lucky number: " + rolledNumber);
+
         double winAmount = game.calculateWin(betAmount, rolledNumber);
         System.out.println("Winning amount: " + winAmount);
+
     }
 }
 
